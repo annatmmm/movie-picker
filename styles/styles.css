@@ -158,14 +158,14 @@
 .form * {
   background-color: rgb(219, 215, 196);
 }
-.form input, .form select {
+.form input {
   width: 80%;
   padding: 0.5rem;
   margin: 1rem;
 }
 @media screen and (min-width: 1280px) {
-  .form input, .form select {
-    width: 50%;
+  .form input {
+    width: 7rem;
   }
 }
 .form__label {
@@ -178,6 +178,7 @@
   color: rgb(146, 15, 15);
 }
 .form__button {
+  width: 14rem;
   padding: 0.5rem 2rem 0.5rem 2rem;
   font-weight: 600;
   font-size: 1rem;
