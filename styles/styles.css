@@ -152,6 +152,10 @@
 
 .form {
   padding: 2rem;
+  background-color: rgb(219, 215, 196);
+}
+.form * {
+  background-color: rgb(219, 215, 196);
 }
 .form input, .form select {
   width: 80%;
