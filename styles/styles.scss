@@ -64,9 +64,10 @@
         width: 80%;
         padding: 0.5rem;
         margin: 1rem;
+        background-color: rgb(219, 215, 196);
         
         @include desktop {
-            width: 50%;
+            width: 80%;
         }
     }
 

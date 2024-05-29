@@ -162,10 +162,11 @@
   width: 80%;
   padding: 0.5rem;
   margin: 1rem;
+  background-color: rgb(219, 215, 196);
 }
 @media screen and (min-width: 1280px) {
   .form input {
-    width: 50%;
+    width: 80%;
   }
 }
 .form__label {
