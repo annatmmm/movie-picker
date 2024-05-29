@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie "P"icket!</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -55,31 +56,26 @@
                 <div>
                     <label for="year" class="form__required form__label">What year do you fancy?</label>
                     <div>
-                        <input type="range" min="1910" max="2024" step="1" name="year" id="year" required="required" aria-required="true"/>
+                        <input type="range" min="1910" max="2024" value="1970" name="year" id="year" step="1" required="required" aria-required="true"/>
+                        <p>Year: <span id="yearValue">1970</span></p>
                     </div>
                 </div>
 
                 <div>
-                    <h4 class="form__label">How good should the movie be?</h4>
+                    <label for="rating" class="form__label">How good should the movie be?</label>
                     <div>
-                        <label for="rating-minValue" class="form__required">I want the rating to be higher than...</label>
-                        <input type="number" id="rating-minValue" name="rating-minValue" min="0" max="10" step="0.1" placeholder="Remember, we want to start from 0 (or higher!)">
-                    </div>
-                    <div>
-                        <label for="rating-maxValue" class="form__required">But it doesn't have to go beyond...</label>
-                        <input type="number" id="rating-maxValue" name="rating-maxValue" min="0" max="10" step="0.1" placeholder="The sky is limitless, but make it under 10 here">
+                        <input type="range" min="0" max="10" value="5" name="rating" id="rating" step="0.1" required="required" aria-required="true"/>
+                        <p>Rating: <span id="ratingValue">5</span></p>
                     </div>
                 </div>
 
                 <div>
                     <h4 class="form__label">Let's decide on the duration! (in minutes)</h4>
                     <div>
-                        <label for="runtime-minValue" class="form__required">I want it to be longer than...</label>
-                        <input type="number" id="runtime-minValue" name="runtime-minValue" min="0" max="300" step="1" placeholder="Remember to put in a number!">
-                    </div>
-                    <div>
                         <label for="runtime-maxValue" class="form__required">The longest we have is 300 minutes! Always come back for more if you have more time to kill.</label>
-                        <input type="number" id="runtime-maxValue" name="runtime-maxValue" min="0" max="300" step="1" placeholder="Let's pick a number under 300">
+                        <div>
+                            <input type="number" id="runtime-maxValue" name="runtime-maxValue" min="0" max="300" step="1" placeholder="Let's pick a number under 300">
+                        </div>
                     </div>
                 </div>
             

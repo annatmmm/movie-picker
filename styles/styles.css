@@ -109,13 +109,10 @@
   }
 }
 
-.main {
-  background-color: azure;
-}
-
 .hero {
   display: flex;
   align-items: center;
+  width: 100%;
   height: 30vh;
 }
 @media screen and (min-width: 768px) {
