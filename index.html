@@ -10,7 +10,7 @@
     <header class="header">
         <nav class="header__navbar">
             <a href="#">
-                <img src="./assets/logo.png" alt="logo" class="logo" />
+                <img src="./assets/logo2-transparent.png" alt="logo" class="logo" />
             </a>
             <ul class="header__navbar--list">
                 <li><a href="./pages/about.html">About</a></li>
@@ -30,7 +30,7 @@
                 <h1>ANYHOOOO, let me PICK for you!!</h1>
                 </div>
             </div> 
-
+            <div>
             <form class="form" id="form">
                 
                 <div>
@@ -39,8 +39,6 @@
                         <input name="title" id="title" type="text" placeholder="Try anything random!" />
                     </div>
                 </div>
-                
-
                 
                 <div>
                     <label for="who" class="form__required form__label">Who are you watching with?</label>
@@ -57,7 +55,7 @@
                 <div>
                     <label for="year" class="form__required form__label">What year do you fancy?</label>
                     <div>
-                        <input type="number" min="1910" max="2024" step="1" name="year" id="year" required="required" aria-required="true" placeholder="It can't be in the future tho..."/>
+                        <input type="range" min="1910" max="2024" step="1" name="year" id="year" required="required" aria-required="true"/>
                     </div>
                 </div>
 
@@ -84,14 +82,12 @@
                         <input type="number" id="runtime-maxValue" name="runtime-maxValue" min="0" max="300" step="1" placeholder="Let's pick a number under 300">
                     </div>
                 </div>
-            </div>
             
-            
-           
-            <div>
-                <button type="submit" class="form__button">Go pick it!</button>
-            </div>
-        </form>
+                <div>
+                    <button type="submit" class="form__button">Go pick it!</button>
+                </div>
+            </form>
+        </div>
     </main> 
     <footer class="contact" id="contact">
         <div class="contact__email">

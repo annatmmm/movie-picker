@@ -7,8 +7,8 @@
 }
 
 .logo {
-  height: 8rem;
-  width: 12rem;
+  height: 7rem;
+  width: 18rem;
   margin: 1rem;
 }
 
@@ -115,8 +115,8 @@
 
 .hero {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  height: 30vh;
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -124,7 +124,7 @@
   }
 }
 .hero__video {
-  width: 80%;
+  height: 80%;
   padding: 2rem;
 }
 @media screen and (min-width: 768px) {
@@ -153,6 +153,7 @@
 .form {
   padding: 2rem;
   background-color: rgb(219, 215, 196);
+  width: 100%;
 }
 .form * {
   background-color: rgb(219, 215, 196);

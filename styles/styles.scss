@@ -9,15 +9,15 @@
 
 .hero {
     display: flex;
-    flex-direction: column;
     align-items: center;
+    height: 30vh;
 
     @include tablet {
         flex-direction: row;
     }
 
     &__video {
-        width:80%;
+        height:80%;
         padding: 2rem;
 
         @include tablet {
@@ -51,6 +51,7 @@
 .form {
     padding: 2rem;
     background-color: rgb(219, 215, 196);
+    width: 100%;
 
     * {
         background-color: rgb(219, 215, 196);
