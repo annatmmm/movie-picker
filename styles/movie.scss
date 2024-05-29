@@ -1,4 +1,4 @@
-$primary-color: #30414c;
+$primary-color: #375a82;
 $secondary-color: #2ecc71;
 $text-color: #333;
 $background-color: #f4f4f4;
@@ -15,7 +15,7 @@ body {
 .container {
   max-width: 100%;
   padding: 20px;
-  background-color: #375A82;
+  background-color: rgb(219, 215, 196);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: $border-radius;
   text-align: center;
@@ -40,7 +40,7 @@ body {
 
 .btn {
   display: inline-block;
-  background-color: $primary-color;
+  background-color: rgb(234, 176, 109);
   color: #fff;
   padding: 10px 20px;
   border: none;

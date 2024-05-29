@@ -9,7 +9,7 @@ body {
 .container {
   max-width: 100%;
   padding: 20px;
-  background-color: #375A82;
+  background-color: rgb(219, 215, 196);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   text-align: center;
@@ -19,7 +19,7 @@ body {
   margin-bottom: 20px;
 }
 .movie-details h2 {
-  color: #30414c;
+  color: #375a82;
 }
 .movie-details p {
   margin: 10px 0;
@@ -31,7 +31,7 @@ body {
 
 .btn {
   display: inline-block;
-  background-color: #30414c;
+  background-color: rgb(234, 176, 109);
   color: #fff;
   padding: 10px 20px;
   border: none;
