@@ -3,14 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/movie.css">
+    <link rel="stylesheet" href="./styles/styles.css">
     <title>Document</title>
    
 </head>
 <body>
+    <header class="header">
+        <nav class="header__navbar">
+            <a href="#">
+                <img src="./assets/logo2-transparent.png" alt="logo" class="logo" />
+            </a>
+            <ul class="header__navbar--list">
+                <li><a href="./pages/about.html">About</a></li>
+                <li><a href="./index.html">Pick-it!</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <div class="container">
     <!-- <div id="movie-details"></div> -->
         <div id="movie-details" class="movie-details"></div>
-
-    <button id="random-btn">Randomize</button>
+    <button id="random-btn" class="btn">Randomize</button>
     <script src="./scripts/script.js" ></script>
+    </div>
 </body>
+<footer class="contact" id="contact">
+    <div class="contact__email">
+        <h2>Contact</h2>
+        <p class="contact__email--details"><span>EMAIL</span></br>aloha@moviepicket.com</p>
+    </div>
+    <div>
+        <h2>Social</h2>
+        <div class="contact__social">
+            <img src="./assets/icons/icon-instagram.png" alt="instagram" />
+            <img src="./assets/icons/icon-facebook.png" alt="facebook" />
+            <img src="./assets/icons/icon-twitter.png" alt="twitter" />
+        </div>
+    </div>
+</footer>
 </html>
