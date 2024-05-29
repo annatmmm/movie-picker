@@ -82,18 +82,31 @@
   padding: 2rem;
   gap: 1rem;
 }
+.contact__email {
+  height: 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 .contact__social {
   display: flex;
   justify-content: space-between;
   align-items: auto;
   width: 8rem;
-  height: 2rem;
+  height: 3rem;
   padding-top: 1.5rem;
   gap: 1rem;
 }
 .contact__social img {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: auto;
+  height: auto;
+  filter: hue-rotate(164deg);
+}
+@media screen and (min-width: 768px) {
+  .contact {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
 }
 
 .main {
@@ -132,16 +145,23 @@
   line-height: 2rem;
   padding: 2rem;
 }
+.hero__words h3 {
+  padding-bottom: 1rem;
+  font-weight: 400;
+}
 
 .form {
   padding: 2rem;
 }
-.form input {
+.form input, .form select {
   width: 80%;
   padding: 0.5rem;
-}
-.form select, .form input {
   margin: 1rem;
+}
+@media screen and (min-width: 1280px) {
+  .form input, .form select {
+    width: 50%;
+  }
 }
 .form__label {
   font-size: 1rem;
@@ -156,9 +176,14 @@
   padding: 0.5rem 2rem 0.5rem 2rem;
   font-weight: 600;
   font-size: 1rem;
-  background-color: rgb(250, 235, 215);
-  border-color: rgb(189, 46, 14);
+  background-color: rgb(234, 176, 109);
+  border-color: rgb(106, 102, 101);
   border-radius: 5px;
+}
+
+::-moz-selection {
+  color: rgb(77, 69, 121);
+  opacity: 1;
 }
 
 ::-moz-placeholder {
@@ -166,7 +191,7 @@
   opacity: 1;
 }
 
-::placeholder {
+::placeholder, ::selection {
   color: rgb(77, 69, 121);
   opacity: 1;
 }/*# sourceMappingURL=styles.css.map */

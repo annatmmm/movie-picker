@@ -99,19 +99,33 @@
   padding: 2rem;
   gap: 1rem;  
 
+    &__email {
+      height: 8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+
+    }
+
     &__social {
       display: flex;
       justify-content: space-between;
       align-items: auto;
       width: 8rem;
-      height: 2rem;
+      height: 3rem;
       padding-top: 1.5rem;
       gap: 1rem;
       
         img {
-          width: 1.5rem;
-          height: 1.5rem;
+          width: auto;
+          height: auto;
+          filter: hue-rotate(164deg);
       }
+    }
+
+    @include tablet {
+      flex-direction: row;
+      justify-content: space-evenly;
     }
 
  }

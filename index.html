@@ -34,20 +34,9 @@
             <form class="form" id="form">
                 
                 <div>
-                    <label for="genre" class="form__required form__label">Give me a genre!</label>
+                    <label for="title" class="form__required form__label">The title should include...</label>
                     <div>
-                        <select name="genre" id="genre" required="required" aria-required="true">
-                            <option value="">-- Select a genre --</option>
-                            <option value="horror">Horror</option>
-                            <option value="drama">Drama</option>
-                            <option value="action">Action</option>
-                            <option value="romance">Romance</option>
-                            <option value="comedy">Comedy</option>
-                            <option value="scifi">Sci-Fi</option>
-                            <option value="musical">Musical</option>
-                            <option value="thriller">Thriller</option>
-                            <option value="war">War</option>
-                        </select>
+                        <input name="title" id="title" type="text" placeholder="Try anything random!" />
                     </div>
                 </div>
                 
@@ -57,7 +46,7 @@
                     <label for="who" class="form__required form__label">Who are you watching with?</label>
                     <div>
                         <select name="who" id="who" required="required" aria-required="true">
-                            <option value="">-- Tell me! --</option>
+                            <option value=""></option>
                             <option value="solo">Solo</option>
                             <option value="couple">THE significant other</option>
                             <option value="family">Family</option>
@@ -75,7 +64,7 @@
                 <div>
                     <h4 class="form__label">How good should the movie be?</h4>
                     <div>
-                        <label for="rating-minValue" class="form__required">I want to make the rating to be higher than...</label>
+                        <label for="rating-minValue" class="form__required">I want the rating to be higher than...</label>
                         <input type="number" id="rating-minValue" name="rating-minValue" min="0" max="10" step="0.1" placeholder="Remember, we want to start from 0 (or higher!)">
                     </div>
                     <div>
@@ -105,16 +94,16 @@
         </form>
     </main> 
     <footer class="contact" id="contact">
-        <div>
+        <div class="contact__email">
             <h2>Contact</h2>
-            <p class="lines-with-space"><span class="font-color-orange font-size-small">EMAIL</span></br>aloha@moviepicket.com</p>
+            <p class="contact__email--details"><span>EMAIL</span></br>aloha@moviepicket.com</p>
         </div>
         <div>
             <h2>Social</h2>
             <div class="contact__social">
-                <img src="./assets/icons/Icon-instagram.svg" alt="instagram" />
-                <img src="./assets/icons/Icon-facebook.svg" alt="facebook" />
-                <img src="./assets/icons/Icon-twitter.svg" alt="twitter" />
+                <img src="./assets/icons/icon-instagram.png" alt="instagram" />
+                <img src="./assets/icons/icon-facebook.png" alt="facebook" />
+                <img src="./assets/icons/icon-twitter.png" alt="twitter" />
             </div>
         </div>
     </footer>
