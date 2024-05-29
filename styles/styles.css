@@ -111,17 +111,12 @@
 
 .hero {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
   width: 100%;
   height: 30vh;
 }
-@media screen and (min-width: 768px) {
-  .hero {
-    flex-direction: row;
-  }
-}
 .hero__video {
-  height: 80%;
+  height: 100%;
   padding: 2rem;
 }
 @media screen and (min-width: 768px) {
@@ -139,18 +134,22 @@
   display: none;
 }
 .hero__words {
-  line-height: 2rem;
   padding: 2rem;
 }
 .hero__words h3 {
   padding-bottom: 1rem;
   font-weight: 400;
 }
+.hero__words h1 {
+  font-size: 2rem;
+}
 
 .form {
   padding: 2rem;
   background-color: rgb(219, 215, 196);
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .form * {
   background-color: rgb(219, 215, 196);
