@@ -60,13 +60,14 @@
         background-color: rgb(219, 215, 196);
     }
 
-    input, select {
+    input {
         width: 80%;
         padding: 0.5rem;
         margin: 1rem;
+        
 
         @include desktop {
-            width: 50%;
+            width: 7rem;
         }
     }
 
@@ -82,6 +83,7 @@
     }
 
     &__button {
+        width: 14rem;
         padding: 0.5rem 2rem 0.5rem 2rem;
         font-weight: 600;
         font-size: 1rem;
