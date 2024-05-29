@@ -151,6 +151,9 @@
   display: flex;
   flex-direction: column;
 }
+.form > div {
+  margin-bottom: 2rem;
+}
 .form * {
   background-color: rgb(219, 215, 196);
 }

@@ -53,6 +53,9 @@
     display: flex;
     flex-direction: column;
 
+    > div {
+        margin-bottom: 2rem;
+    }
 
     * {
         background-color: rgb(219, 215, 196);
