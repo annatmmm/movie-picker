@@ -165,7 +165,7 @@
 }
 @media screen and (min-width: 1280px) {
   .form input {
-    width: 7rem;
+    width: 50%;
   }
 }
 .form__label {
@@ -204,8 +204,12 @@
 
 .about {
   padding: 2rem;
-  background-color: azure;
+  background-color: rgb(219, 215, 196);
+  text-align: center;
 }
 .about * {
-  background-color: azure;
+  background-color: rgb(219, 215, 196);
+}
+.about h1 {
+  padding: 2rem;
 }/*# sourceMappingURL=styles.css.map */

@@ -65,9 +65,8 @@
         padding: 0.5rem;
         margin: 1rem;
         
-
         @include desktop {
-            width: 7rem;
+            width: 50%;
         }
     }
 
@@ -100,9 +99,14 @@
 
 .about {
     padding: 2rem;
-    background-color: azure;
+    background-color: rgb(219, 215, 196);
+    text-align: center;
 
     * {
-    background-color: azure;
+    background-color: rgb(219, 215, 196);
+    }
+
+    h1 {
+        padding: 2rem;
     }
 }
