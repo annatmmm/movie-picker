@@ -3,6 +3,7 @@
   padding: 0px;
   margin: 0px;
   background-color: #dfc7f6;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .logo {
@@ -63,8 +64,9 @@
 }
 .header__navbar--list a {
   text-decoration: none;
+  color: rgba(63, 60, 60, 0.901);
   padding: 0 1rem 1rem 1rem;
-  font-size: 0.875rem;
+  font-size: 1.5rem;
   font-weight: 400;
 }
 
@@ -88,4 +90,21 @@
 .contact__social img {
   width: 1.5rem;
   height: 1.5rem;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+  }
+}
+.hero__img {
+  width: 80%;
+}
+.hero__words {
+  line-height: 2rem;
 }/*# sourceMappingURL=styles.css.map */

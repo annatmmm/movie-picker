@@ -14,23 +14,25 @@
             </a>
             <ul class="header__navbar--list">
                 <li><a href="./pages/about.html">About</a></li>
-                <li><a href="#">Pick-it!</a></li>
+                <li><a href="#form">Pick-it!</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav> 
     </header>
     <main>
-        <img src="./assets/heroimage.jpeg" alt="hero-image" />
-        <form class="booking-form">
-            <div>
-                <h2>Not making a choice is also a choice...(or not)<br /> ...(or yes) </h2>
-                <h3>ANYHOOOO, let me PICK for you!!</h3>
-            </div>
-            <div class="booking-form__field">
+            <div class="hero">
+                <img src="./assets/heroimage.jpeg" alt="hero-image" class="hero__img" />
+                <div class="hero__words">
+                <h3>Not making a choice is also a choice...(or not)<br /> ...(or yes) </h3>
+                <h1>ANYHOOOO, let me PICK for you!!</h1>
+                </div>
+            </div> 
+
+            <form class="form" id="form">
                 
                 <div>
-                    <label for="booking-form__field--name" class="booking-form__field--required">Give me a genre!</label>
-                    <select name="booking-form__field--destination" id="booking-form__field--destination" required="required" aria-required="true">
+                    <label for="genre" class="form__required form__label">Give me a genre!</label>
+                    <select name="genre" id="genre" required="required" aria-required="true">
                         <option value="">-- Select a genre --</option>
                         <option value="horror">Horror</option>
                         <option value="drama">Drama</option>
@@ -47,8 +49,8 @@
 
                 
                 <div>
-                    <label for="booking-form__field--destination" class="booking-form__field--required">Who are you watching with?</label>
-                    <select name="booking-form__field--destination" id="booking-form__field--destination" required="required" aria-required="true">
+                    <label for="who" class="form__required form__label">Who are you watching with?</label>
+                    <select name="who" id="who" required="required" aria-required="true">
                         <option value="">-- Tell me! --</option>
                         <option value="solo">Solo</option>
                         <option value="couple">THE significant other</option>
@@ -57,29 +59,31 @@
                 </div>
 
                 <div>
-                    <label for="booking-form__field--destination" class="booking-form__field--required">What year do you fancy?</label>
-                    <input type="number" min="1930" max="2024" step="1" name="booking-form__field--name" id="booking-form__field--name" required="required" aria-required="true" />
+                    <label for="year" class="form__required form__label">What year do you fancy?</label>
+                    <input type="number" min="1930" max="2024" step="1" name="year" id="year" required="required" aria-required="true" />
                 </div>
 
-                <label for="rangeInput">How good should the movie be?</label>
-                <label for="minValue">Minimum Value:</label>
-                <input type="number" id="minValue" name="minValue" min="0" max="10" step="0.1">
-                <label for="maxValue">Maximum Value:</label>
-                <input type="number" id="maxValue" name="maxValue" min="0" max="10" step="0.1">
+                <div>
+                <label for="rating" class="form__required form__label">How good should the movie be?</label>
+                <label for="rating-minValue">Minimum Value:</label>
+                <input type="number" id="rating-minValue" name="rating-minValue" min="0" max="10" step="0.1">
+                <label for="rating-maxValue">Maximum Value:</label>
+                <input type="number" id="rating-maxValue" name="rating-maxValue" min="0" max="10" step="0.1">
+                </div>
 
                 <div>
-                    <label for="rangeInput">Let's decide on the duration! (in minutes)</label>
-                <label for="minValue">Minimum:</label>
-                <input type="number" id="minValue" name="minValue" min="0" max="300" step="1">
-                <label for="maxValue">Maximum:</label>
-                <input type="number" id="maxValue" name="maxValue" min="0" max="300" step="1">
+                <label for="runtime">Let's decide on the duration! (in minutes)</label>
+                <label for="runtime-minValue">Minimum:</label>
+                <input type="number" id="runtime-minValue" name="runtime-minValue" min="0" max="300" step="1">
+                <label for="runtime-maxValue">Maximum:</label>
+                <input type="number" id="runtime-maxValue" name="runtime-maxValue" min="0" max="300" step="1">
                 </div>
             </div>
             
             
            
             <div>
-                <button type="submit" class="button">Send</button>
+                <button type="submit" class="button">Go pick it!</button>
             </div>
         </form>
     </main> 
