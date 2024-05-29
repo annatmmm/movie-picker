@@ -27,41 +27,36 @@
                     This is supposed to be a video... Unfortunately, your browser does not support it.
                 </video>
                 <div class="hero__words">
-                <h3>Not making a choice is also a choice...(or not)<br /> ...(or yes) </h3>
+                <h3>Not making a choice is also a choice...(or not)</h3>
                 <h1>ANYHOOOO, let me PICK for you!!</h1>
                 </div>
             </div> 
             <div>
             <div class="container">
-        <header>
-            <h1>Random Movie Picker</h1>
-            <div class="filter-bar">
+        <section class="form">
                 <div>
-                    <label for="title" class="form__required form__label">The title should include...</label>
+                    <label for="genre-input" class="form__required form__label">The title should include...</label>
                     <div>
-                        <input type="text" id="genre-input" placeholder="Genre (e.g., Action)">
+                        <input type="text" id="genre-input" placeholder="Try anything random!!">
                     </div>
                 </div>
                 <div>
-                <label for="rating" class="form__label form__required">What is the minimum rating of the movie?</label>
+                <label for="rating-input" class="form__label form__required">What is the minimum rating of the movie?</label>
                 <input type="text" id="rating-input" placeholder="Minimum Rating (1-10)">
                 </div>
 
                 <div>
                     <h4 class="form__label">Let's decide on the duration! (in minutes)</h4>
                     <div>
-                        <label for="runtime-maxValue" class="form__required">The longest we have is 300 minutes! Always come back for more if you have more time to kill.</label>
+                        <label for="duration-input" class="form__required">The longest we have is 300 minutes! Always come back for more if you have more time to kill.</label>
                         <div>
                             <input type="text" id="duration-input" placeholder="Max Duration (minutes)">
                         </div>
                     </div>
                 </div>
-                <button id="random-btn" onclick="getMovieSuggestion()">Pick a Random Movie</button>
+                <button id="random-btn" onclick="getMovieSuggestion()" class="form__button">Go pick it!!</button>
             </div>
-        </header>
-        <!-- <main>
-            <div id="movie-details" class="movie-details"></div>
-        </main> -->
+        </section>
     </div>
         </div>
     </main> 

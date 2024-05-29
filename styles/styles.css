@@ -4,6 +4,7 @@
   margin: 0px;
   background-color: #e9d4a2;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #375A82;
 }
 
 .logo {
@@ -64,7 +65,7 @@
 }
 .header__navbar--list a {
   text-decoration: none;
-  color: rgba(63, 60, 60, 0.901);
+  color: rgba(6, 36, 83, 0.901);
   font-size: 1.5rem;
   font-weight: 400;
 }
@@ -198,4 +199,12 @@
 ::placeholder, ::selection {
   color: rgb(77, 69, 121);
   opacity: 1;
+}
+
+.about {
+  padding: 2rem;
+  background-color: azure;
+}
+.about * {
+  background-color: azure;
 }/*# sourceMappingURL=styles.css.map */
