@@ -4,8 +4,8 @@ function updateSlider(slider, output) {
     });
 }
 
-const ratingSlider = document.getElementById("rating");
-const ratingValue = document.getElementById("ratingValue");
+const ratingSlider = document.getElementById("rating-input");
+const ratingValue = document.getElementById("rating-display");
 
 updateSlider(ratingSlider, ratingValue);
 

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie "P"icket!</title>
     <link rel="stylesheet" href="./styles/styles.css">
-    <script src="main.js" defer></script>
+    <!-- <script src="main.js" defer></script> -->
 </head>
 <body>
     <header class="header">
@@ -32,41 +32,19 @@
                 </div>
             </div> 
             <div>
-            <form class="form" id="form">
-                
+            <div class="container">
+        <header>
+            <h1>Random Movie Picker</h1>
+            <div class="filter-bar">
                 <div>
                     <label for="title" class="form__required form__label">The title should include...</label>
                     <div>
-                        <input name="title" id="title" type="text" placeholder="Try anything random!" />
+                        <input type="text" id="genre-input" placeholder="Genre (e.g., Action)">
                     </div>
                 </div>
-                
-                <!-- <div>
-                    <label for="who" class="form__required form__label">Who are you watching with?</label>
-                    <div>
-                        <select name="who" id="who">
-                            <option value=""></option>
-                            <option value="solo">Solo</option>
-                            <option value="couple">THE significant other</option>
-                            <option value="family">Family</option>
-                        </select>
-                    </div>
-                </div> -->
-
-                <!-- <div>
-                    <label for="year" class="form__required form__label">What year do you fancy?</label>
-                    <div>
-                        <input type="range" min="1910" max="2024" value="1970" name="year" id="year" step="1" required="required" aria-required="true"/>
-                        <p>Year: <span id="yearValue">1970</span></p>
-                    </div>
-                </div> -->
-
                 <div>
-                    <label for="rating" class="form__label form__required">What is the minimum rating of the movie?</label>
-                    <div>
-                        <input type="range" min="0" max="10" value="5" name="rating" id="rating" step="0.1" required="required" aria-required="true"/>
-                        <p>Rating: <span id="ratingValue">5</span></p>
-                    </div>
+                <label for="rating" class="form__label form__required">What is the minimum rating of the movie?</label>
+                <input type="text" id="rating-input" placeholder="Minimum Rating (1-10)">
                 </div>
 
                 <div>
@@ -74,15 +52,17 @@
                     <div>
                         <label for="runtime-maxValue" class="form__required">The longest we have is 300 minutes! Always come back for more if you have more time to kill.</label>
                         <div>
-                            <input type="number" id="runtime-maxValue" name="runtime-maxValue" min="0" max="300" step="1" placeholder="Let's pick a number under 300">
+                            <input type="text" id="duration-input" placeholder="Max Duration (minutes)">
                         </div>
                     </div>
                 </div>
-            
-                <div>
-                    <button type="submit" class="form__button">Go pick it!</button>
-                </div>
-            </form>
+                <button id="random-btn" onclick="getMovieSuggestion()">Pick a Random Movie</button>
+            </div>
+        </header>
+        <!-- <main>
+            <div id="movie-details" class="movie-details"></div>
+        </main> -->
+    </div>
         </div>
     </main> 
     <footer class="contact" id="contact">
@@ -99,6 +79,6 @@
             </div>
         </div>
     </footer>
-    <!-- <script src="js/script.js"></script> -->
+    <script src="./scripts/index.js"></script>
 </body>
 </html>
