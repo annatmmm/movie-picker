@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Movie "P"icket!</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
     <header class="header">
@@ -12,14 +12,67 @@
             <a href="#">
                 <img src="./assets/logo.svg" alt="logo" class="logo" />
             </a>
-            <ul class="nav__list">
-                <li><a href="index.html" class="link-no-underline nav__list--current">About</a></li>
-                <li><a href="pages/hawaii.html" class="link-no-underline">Pick-it!</a></li>
-                <li><a href="pages/iceland.html" class="link-no-underline">Contact</a></li>
+            <ul class="header__navbar--list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Pick-it!</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </nav> 
-    </header> 
-
+    </header>
+    <main>
+        <form class="booking-form">
+            <div>
+                <h2>Not making a choice is also a choice...(or not)<br /> ...(or yes) </h2>
+                <h3>ANYHOOOO, let me decide for you!!</h3>
+            </div>
+            <div class="booking-form__field">
+                <label for="booking-form__field--name" class="booking-form__field--required">Give me a genre!</label>
+                <div>
+                    <input type="text" name="booking-form__field--name" id="booking-form__field--name" required="required" aria-required="true" />
+                </div>
+            </div>
+            <div class="booking-form__field">
+                <label for="booking-form__field--email" class="booking-form__field--required">Email</label>
+                <div>
+                    <input type="email" name="booking-form__field--email" id="booking-form__field--email" required="required" aria-required="true" />
+                </div>
+            </div>
+            <div class="booking-form__field">
+                <label for="booking-form__field--destination" class="booking-form__field--required">Destination</label>
+                <div>
+                    <select name="booking-form__field--destination" id="booking-form__field--destination" required="required" aria-required="true">
+                        <option value="">-- Select a destination --</option>
+                        <option value="1">Hawaii</option>
+                        <option value="2">Iceland</option>
+                        <option value="3">Greece</option>
+                    </select>
+                </div>
+            </div>
+            <div class="booking-form__field">
+                <label for="booking-form__message" class="booking-form__field--required">Message</label>
+                <div>
+                    <textarea id="booking-form__message" name="booking-form__message" rows="10" required="required" aria-required="true"></textarea>
+                </div>
+            </div>
+            <div>
+                <button type="submit" class="button">Send</button>
+            </div>
+        </form>
+    </main> 
+    <footer class="contact">
+        <div>
+            <h2>Contact</h2>
+            <p class="lines-with-space"><span class="font-color-orange font-size-small">EMAIL</span></br>aloha@moviepicket.com</p>
+        </div>
+        <div>
+            <h2>Social</h2>
+            <div class="contact__social">
+                <img src="./assets/icons/Icon-instagram.svg" alt="instagram" />
+                <img src="./assets/icons/Icon-facebook.svg" alt="facebook" />
+                <img src="./assets/icons/Icon-twitter.svg" alt="twitter" />
+            </div>
+        </div>
+    </footer>
     <!-- <script src="js/script.js"></script> -->
 </body>
 </html>

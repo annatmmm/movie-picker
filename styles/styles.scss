@@ -1,1 +1,5 @@
-$background-color: #f4f4f4;
+@use "./partials/globals";
+@use "./partials/typography";
+@use "./partials/mixins" as *;
+@use "./partials/variables" as *;
+

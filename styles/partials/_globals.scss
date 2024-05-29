@@ -1,0 +1,110 @@
+@use './typography' as *;
+@use './variables' as *;
+@use './mixins' as *;
+
+// General rules
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    background-color: #5aa9d0c3;
+}
+
+
+.logo {
+    height: 1.25rem;
+    width: 7.5rem;
+    padding: 0;
+  }
+
+
+// Rules on header
+  
+.header {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    text-align: center;
+    z-index: 1;
+
+    @include tablet {
+      display: flex;
+      align-items: center;
+    }
+
+   
+    &__navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+      @include tablet {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+      }
+
+      @include desktop {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      &--list {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+
+        @include tablet {
+          padding-top: 0.5rem;
+        }
+
+        li {
+          width: 50vw;
+          padding-bottom: 0.5rem;
+
+          @include tablet {
+            width: auto;
+          }
+        }
+
+        a {
+          text-decoration: none;
+          padding: 0 1rem 1rem 1rem;
+          font-size: 0.875rem;
+          font-weight: 400;
+        }
+
+      }
+      }
+
+      
+    }
+
+
+// Rules applied to footer
+
+.contact {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 1rem;  
+
+    &__social {
+      display: flex;
+      justify-content: space-between;
+      align-items: auto;
+      width: 8rem;
+      height: 2rem;
+      padding-top: 1.5rem;
+      gap: 1rem;
+      
+        img {
+          width: 2rem;
+          height: 2rem;
+      }
+    }
+
+ }
