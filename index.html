@@ -3,10 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Picker</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Movie "P"icket!</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="main.js" defer></script>
 </head>
 <body>
+    <header class="header">
+        <nav class="header__navbar">
+            <a href="#">
+                <img src="./assets/logo2-transparent.png" alt="logo" class="logo" />
+            </a>
+            <ul class="header__navbar--list">
+                <li><a href="./pages/about.html">About</a></li>
+                <li><a href="#form">Pick-it!</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav> 
+    </header>
+    <main class="main">
+            <div class="hero">
+                <video class="hero__video" autoplay loop muted controls="false">
+                    <source src="assets/video.mp4" type="video/mp4">
+                    This is supposed to be a video... Unfortunately, your browser does not support it.
+                </video>
+                <div class="hero__words">
+                <h3>Not making a choice is also a choice...(or not)<br /> ...(or yes) </h3>
+                <h1>ANYHOOOO, let me PICK for you!!</h1>
+                </div>
+            </div> 
+            <div>
+            <form class="form" id="form">
+                
+                <div>
+                    <label for="title" class="form__required form__label">The title should include...</label>
+                    <div>
+                        <input name="title" id="title" type="text" placeholder="Try anything random!" />
+                    </div>
+                </div>
+                
+                <!-- <div>
+                    <label for="who" class="form__required form__label">Who are you watching with?</label>
+                    <div>
+                        <select name="who" id="who">
+                            <option value=""></option>
+                            <option value="solo">Solo</option>
+                            <option value="couple">THE significant other</option>
+                            <option value="family">Family</option>
+                        </select>
+                    </div>
+                </div> -->
+
+                <!-- <div>
+                    <label for="year" class="form__required form__label">What year do you fancy?</label>
+                    <div>
+                        <input type="range" min="1910" max="2024" value="1970" name="year" id="year" step="1" required="required" aria-required="true"/>
+                        <p>Year: <span id="yearValue">1970</span></p>
+                    </div>
+                </div> -->
+
+                <div>
+                    <label for="rating" class="form__label form__required">What is the minimum rating of the movie?</label>
+                    <div>
+                        <input type="range" min="0" max="10" value="5" name="rating" id="rating" step="0.1" required="required" aria-required="true"/>
+                        <p>Rating: <span id="ratingValue">5</span></p>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="form__label">Let's decide on the duration! (in minutes)</h4>
+                    <div>
+                        <label for="runtime-maxValue" class="form__required">The longest we have is 300 minutes! Always come back for more if you have more time to kill.</label>
+                        <div>
+                            <input type="number" id="runtime-maxValue" name="runtime-maxValue" min="0" max="300" step="1" placeholder="Let's pick a number under 300">
+                        </div>
+                    </div>
+                </div>
+            
+                <div>
+                    <button type="submit" class="form__button">Go pick it!</button>
+                </div>
+            </form>
+        </div>
+    </main> 
+    <footer class="contact" id="contact">
+        <div class="contact__email">
+            <h2>Contact</h2>
+            <p class="contact__email--details"><span>EMAIL</span></br>aloha@moviepicket.com</p>
+        </div>
+        <div>
+            <h2>Social</h2>
+            <div class="contact__social">
+                <img src="./assets/icons/icon-instagram.png" alt="instagram" />
+                <img src="./assets/icons/icon-facebook.png" alt="facebook" />
+                <img src="./assets/icons/icon-twitter.png" alt="twitter" />
+            </div>
+        </div>
+    </footer>
     <!-- <script src="js/script.js"></script> -->
 </body>
 </html>
