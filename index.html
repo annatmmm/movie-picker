@@ -19,9 +19,12 @@
             </ul>
         </nav> 
     </header>
-    <main>
+    <main class="main">
             <div class="hero">
-                <img src="./assets/heroimage.jpeg" alt="hero-image" class="hero__img" />
+                <video class="hero__video" autoplay loop muted controls="false">
+                    <source src="assets/video.mp4" type="video/mp4">
+                    This is supposed to be a video... Unfortunately, your browser does not support it.
+                </video>
                 <div class="hero__words">
                 <h3>Not making a choice is also a choice...(or not)<br /> ...(or yes) </h3>
                 <h1>ANYHOOOO, let me PICK for you!!</h1>
@@ -32,58 +35,72 @@
                 
                 <div>
                     <label for="genre" class="form__required form__label">Give me a genre!</label>
-                    <select name="genre" id="genre" required="required" aria-required="true">
-                        <option value="">-- Select a genre --</option>
-                        <option value="horror">Horror</option>
-                        <option value="drama">Drama</option>
-                        <option value="action">Action</option>
-                        <option value="romance">Romance</option>
-                        <option value="comedy">Comedy</option>
-                        <option value="scifi">Sci-Fi</option>
-                        <option value="musical">Musical</option>
-                        <option value="thriller">Thriller</option>
-                        <option value="war">War</option>
-                    </select>
+                    <div>
+                        <select name="genre" id="genre" required="required" aria-required="true">
+                            <option value="">-- Select a genre --</option>
+                            <option value="horror">Horror</option>
+                            <option value="drama">Drama</option>
+                            <option value="action">Action</option>
+                            <option value="romance">Romance</option>
+                            <option value="comedy">Comedy</option>
+                            <option value="scifi">Sci-Fi</option>
+                            <option value="musical">Musical</option>
+                            <option value="thriller">Thriller</option>
+                            <option value="war">War</option>
+                        </select>
+                    </div>
                 </div>
                 
 
                 
                 <div>
                     <label for="who" class="form__required form__label">Who are you watching with?</label>
-                    <select name="who" id="who" required="required" aria-required="true">
-                        <option value="">-- Tell me! --</option>
-                        <option value="solo">Solo</option>
-                        <option value="couple">THE significant other</option>
-                        <option value="family">Family</option>
-                    </select>
+                    <div>
+                        <select name="who" id="who" required="required" aria-required="true">
+                            <option value="">-- Tell me! --</option>
+                            <option value="solo">Solo</option>
+                            <option value="couple">THE significant other</option>
+                            <option value="family">Family</option>
+                        </select>
+                    </div>
                 </div>
 
                 <div>
                     <label for="year" class="form__required form__label">What year do you fancy?</label>
-                    <input type="number" min="1930" max="2024" step="1" name="year" id="year" required="required" aria-required="true" />
+                    <div>
+                        <input type="number" min="1910" max="2024" step="1" name="year" id="year" required="required" aria-required="true" placeholder="It can't be in the future tho..."/>
+                    </div>
                 </div>
 
                 <div>
-                <label for="rating" class="form__required form__label">How good should the movie be?</label>
-                <label for="rating-minValue">Minimum Value:</label>
-                <input type="number" id="rating-minValue" name="rating-minValue" min="0" max="10" step="0.1">
-                <label for="rating-maxValue">Maximum Value:</label>
-                <input type="number" id="rating-maxValue" name="rating-maxValue" min="0" max="10" step="0.1">
+                    <h4 class="form__label">How good should the movie be?</h4>
+                    <div>
+                        <label for="rating-minValue" class="form__required">I want to make the rating to be higher than...</label>
+                        <input type="number" id="rating-minValue" name="rating-minValue" min="0" max="10" step="0.1" placeholder="Remember, we want to start from 0 (or higher!)">
+                    </div>
+                    <div>
+                        <label for="rating-maxValue" class="form__required">But it doesn't have to go beyond...</label>
+                        <input type="number" id="rating-maxValue" name="rating-maxValue" min="0" max="10" step="0.1" placeholder="The sky is limitless, but make it under 10 here">
+                    </div>
                 </div>
 
                 <div>
-                <label for="runtime">Let's decide on the duration! (in minutes)</label>
-                <label for="runtime-minValue">Minimum:</label>
-                <input type="number" id="runtime-minValue" name="runtime-minValue" min="0" max="300" step="1">
-                <label for="runtime-maxValue">Maximum:</label>
-                <input type="number" id="runtime-maxValue" name="runtime-maxValue" min="0" max="300" step="1">
+                    <h4 class="form__label">Let's decide on the duration! (in minutes)</h4>
+                    <div>
+                        <label for="runtime-minValue" class="form__required">I want it to be longer than...</label>
+                        <input type="number" id="runtime-minValue" name="runtime-minValue" min="0" max="300" step="1" placeholder="Remember to put in a number!">
+                    </div>
+                    <div>
+                        <label for="runtime-maxValue" class="form__required">The longest we have is 300 minutes! Always come back for more if you have more time to kill.</label>
+                        <input type="number" id="runtime-maxValue" name="runtime-maxValue" min="0" max="300" step="1" placeholder="Let's pick a number under 300">
+                    </div>
                 </div>
             </div>
             
             
            
             <div>
-                <button type="submit" class="button">Go pick it!</button>
+                <button type="submit" class="form__button">Go pick it!</button>
             </div>
         </form>
     </main> 

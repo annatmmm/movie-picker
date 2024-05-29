@@ -3,6 +3,10 @@
 @use "./partials/mixins" as *;
 @use "./partials/variables" as *;
 
+.main {
+    background-color: azure;
+}
+
 .hero {
     display: flex;
     flex-direction: column;
@@ -12,11 +16,62 @@
         flex-direction: row;
     }
 
-    &__img {
-        width: 80%;
+    &__video {
+        width:80%;
+        padding: 2rem;
+
+        @include tablet {
+            width: 50%;
+        }
+
+        &::-webkit-media-controls-timeline {
+            display: none;
+        }
+
+        &::-webkit-media-controls-current-time-display {
+            display: none;
+        }
+
+        &::-webkit-media-controls-time-remaining-display {
+            display: none;
+        }
     }
 
     &__words {
-        line-height: 2rem;
+        line-height: 2rem; 
+        padding: 2rem;
     }
+}
+
+.form {
+    padding: 2rem;
+
+    input {
+        width: 80%;
+        padding: 0.5rem;
+    }
+
+    &__label {
+        font-size: 1rem;
+        font-weight: 400;
+    } 
+
+    &__required::after {
+        content:" *";
+        color: rgb(146, 15, 15);
+    }
+
+    &__button {
+        padding: 0.5rem 2rem 0.5rem 2rem;
+        font-weight: 600;
+        font-size: 1rem;
+        background-color: rgb(250, 235, 215);
+        border-color: rgb(189, 46, 14);
+        border-radius: 5px;
+    }
+}
+
+::placeholder {
+    color: rgb(77, 69, 121);
+    opacity: 1;
 }

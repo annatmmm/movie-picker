@@ -2,14 +2,14 @@
   box-sizing: border-box;
   padding: 0px;
   margin: 0px;
-  background-color: #dfc7f6;
+  background-color: #e9d4a2;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .logo {
-  height: 6rem;
-  width: 10rem;
-  padding: 0;
+  height: 8rem;
+  width: 12rem;
+  margin: 1rem;
 }
 
 .header {
@@ -55,7 +55,7 @@
 }
 .header__navbar--list li {
   width: 50vw;
-  padding-bottom: 0.5rem;
+  padding: 0 2rem 0 2rem;
 }
 @media screen and (min-width: 768px) {
   .header__navbar--list li {
@@ -65,14 +65,18 @@
 .header__navbar--list a {
   text-decoration: none;
   color: rgba(63, 60, 60, 0.901);
-  padding: 0 1rem 1rem 1rem;
   font-size: 1.5rem;
   font-weight: 400;
+}
+.header__navbar--list a:hover {
+  color: rgb(45, 12, 175);
+  background-color: rgb(200, 146, 225);
 }
 
 .contact {
   display: flex;
   justify-content: flex-start;
+  flex-direction: column;
   align-items: baseline;
   flex-wrap: wrap;
   padding: 2rem;
@@ -92,6 +96,10 @@
   height: 1.5rem;
 }
 
+.main {
+  background-color: azure;
+}
+
 .hero {
   display: flex;
   flex-direction: column;
@@ -102,9 +110,59 @@
     flex-direction: row;
   }
 }
-.hero__img {
+.hero__video {
   width: 80%;
+  padding: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .hero__video {
+    width: 50%;
+  }
+}
+.hero__video::-webkit-media-controls-timeline {
+  display: none;
+}
+.hero__video::-webkit-media-controls-current-time-display {
+  display: none;
+}
+.hero__video::-webkit-media-controls-time-remaining-display {
+  display: none;
 }
 .hero__words {
   line-height: 2rem;
+  padding: 2rem;
+}
+
+.form {
+  padding: 2rem;
+}
+.form input {
+  width: 80%;
+  padding: 0.5rem;
+}
+.form__label {
+  font-size: 1rem;
+  font-weight: 400;
+}
+.form__required::after {
+  content: " *";
+  color: rgb(146, 15, 15);
+}
+.form__button {
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  font-weight: 600;
+  font-size: 1rem;
+  background-color: rgb(250, 235, 215);
+  border-color: rgb(189, 46, 14);
+  border-radius: 5px;
+}
+
+::-moz-placeholder {
+  color: rgb(77, 69, 121);
+  opacity: 1;
+}
+
+::placeholder {
+  color: rgb(77, 69, 121);
+  opacity: 1;
 }/*# sourceMappingURL=styles.css.map */
